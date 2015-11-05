@@ -1,0 +1,5 @@
+c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\Model\bin\Debug\Model.dll
+c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\Model\bin\Debug\Model.pdb
+c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\Model\obj\Debug\Model.dll
+c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\Model\obj\Debug\Model.pdb
+c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

@@ -1,0 +1,71 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MindMapping" x:Class="MindMapping.MainWindow"
+        Title="MindMapping" Height="623" Width="900">
+
+    <Grid   >
+
+        <Grid HorizontalAlignment="Left" Height="520" VerticalAlignment="Top" Width="892" Background="Wheat"/>
+        <Grid>
+            <Grid HorizontalAlignment="Left" Height="447" VerticalAlignment="Top" Width="126" Background="Wheat" Margin="10,53,0,0" />
+
+
+            <Canvas x:Name="MyGrid" HorizontalAlignment="Center" Height="446" VerticalAlignment="Top" Width="729" Background="WhiteSmoke" MouseLeftButtonDown="DrawMindHandler"
+				Margin="141,55,0,0" >
+
+
+
+                <Label Content="Elements" HorizontalAlignment="Left" Margin="-112,-4,0,0" FontSize="14" FontStyle ="Italic" Foreground=" 
+                       Brown" FontFamily="Arial" VerticalAlignment="Top" Width="85" Height="26"  
+                       />
+
+                <TextBox  Style="{StaticResource RootMind}" TextChanged="TextChangedHandler" Margin="260,204,0,0"
+                          MouseLeftButtonUp="RootSecondHandler" MouseRightButtonUp="RootFirstHandler"/>
+
+                
+                
+
+            </Canvas>
+
+        </Grid>
+        <Grid>
+            <Grid HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="860" Background="Aqua" Margin="13,10,0,0" >
+
+                <!--MenuBar-->
+                <Menu Height="39" VerticalAlignment="Top" Margin="0,1,0,0">
+                    <MenuItem Header="File">
+                        <MenuItem Header="New scheme" >
+                            <MenuItem Header="Empty"/>
+                            <MenuItem Header="Template" />
+                            <MenuItem Header="Example"  />
+                        </MenuItem>
+                        <MenuItem Header="Save" />
+                        <Separator />
+                        <MenuItem Header="Exit" />
+                    </MenuItem>
+                    <MenuItem Header="Styles" />
+                    <MenuItem Header="Search strategy" >
+                        <MenuItem Header="Depth-first search" />
+                        <MenuItem Header="Breadth-first searchs"/>
+                    </MenuItem>
+                </Menu>
+
+
+
+
+                <!--SearchBox-->
+                <TextBox HorizontalAlignment="Left" x:Name="tb1" Height="21" TextWrapping="Wrap" Text="Enter mind for search" Opacity="0.7"
+					Background="Azure" FontSize="14" MouseEnter="EmptyTextHandler" MouseLeave="ReturnTextHandler"
+					FontFamily="Arial" FontStyle="Oblique" VerticalAlignment="Top" Width="287" Margin="550,10,0,0" />
+            </Grid>
+            <Button Content="Branch"  Margin="13,73,0,0" Style="{StaticResource BaseButton}" Click="Button_Click" />
+            <Button Content="Leaf"  Margin="13,158,0,0"  Style="{StaticResource BaseButton}" Click="Button_Click_1"/>
+            <Button Content="Arrow"  Margin="13,243,0,0" Style="{StaticResource BaseButton}" />
+            <Button Content="Video" Margin="13,328,0,0" Style="{StaticResource BaseButton}"/>
+            <Button Content="Audio"  Margin="13,413,0,0" Style="{StaticResource BaseButton}" />
+            <TextBox HorizontalAlignment="Left" Height="44" Margin="33,529,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="827"/>
+
+        </Grid>
+    </Grid>
+</Window>

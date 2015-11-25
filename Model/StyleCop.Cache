@@ -1,9 +1,12 @@
 <stylecopresultscache>
   <version>12</version>
+  <project key="594910878">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="ClientC.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 10:59:21.819</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -26,7 +29,7 @@
   <sourcecode name="Component.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:10:16.096</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -49,7 +52,7 @@
   <sourcecode name="CompositeC.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:49:06.406</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -72,7 +75,7 @@
   <sourcecode name="Leaf.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.10.21 21:04:40.825</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -95,7 +98,7 @@
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.10.15 03:07:45.190</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -118,7 +121,7 @@
   <sourcecode name="Client.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:14:09.820</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -141,7 +144,7 @@
   <sourcecode name="Context.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:14:09.827</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -164,7 +167,7 @@
   <sourcecode name="BreadthFirstSearch.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:16:30.748</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -187,7 +190,7 @@
   <sourcecode name="DepthFirstSearch.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:16:30.756</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -210,7 +213,7 @@
   <sourcecode name="StrategyA.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 11:18:24.000</styleCop>
-      <settingsFile>2015.11.12 01:16:17.233</settingsFile>
+      <settingsFile>2015.11.25 22:12:53.090</settingsFile>
       <sourceFile>2015.11.05 04:44:01.655</sourceFile>
       <parser>2014.04.01 11:18:24.000</parser>
       <StyleCop.CSharp.DocumentationRules>2014.04.01 11:18:24.000</StyleCop.CSharp.DocumentationRules>
@@ -230,7 +233,4 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <project key="594910878">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
 </stylecopresultscache>

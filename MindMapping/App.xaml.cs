@@ -8,7 +8,5 @@ using System.Windows;
 
 namespace MindMapping
 {
-    public partial class App : Application
-    {
-    }
+public partial class App : Application {}
 }

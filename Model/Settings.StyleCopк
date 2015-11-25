@@ -1,70 +1,12 @@
 <StyleCopSettings Version="105">
+  <Parsers>
+    <Parser ParserId="StyleCop.CSharp.CsParser">
+      <ParserSettings>
+        <BooleanProperty Name="AnalyzeDesignerFiles">False</BooleanProperty>
+      </ParserSettings>
+    </Parser>
+  </Parsers>
   <Analyzers>
-    <Analyzer AnalyzerId="StyleCop.CSharp.NamingRules">
-      <Rules>
-        <Rule Name="ElementMustBeginWithUpperCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ElementMustBeginWithLowerCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="InterfaceNamesMustBeginWithI">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ConstFieldNamesMustBeginWithUpperCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="NonPrivateReadonlyFieldsMustBeginWithUpperCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="FieldNamesMustNotUseHungarianNotation">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="FieldNamesMustBeginWithLowerCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="AccessibleFieldsMustBeginWithUpperCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="VariableNamesMustNotBePrefixed">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="FieldNamesMustNotBeginWithUnderscore">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="FieldNamesMustNotContainUnderscore">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="StaticReadonlyFieldsMustBeginWithUpperCaseLetter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-      </Rules>
-      <AnalyzerSettings />
-    </Analyzer>
     <Analyzer AnalyzerId="StyleCop.CSharp.DocumentationRules">
       <Rules>
         <Rule Name="ElementsMustBeDocumented">
@@ -278,6 +220,220 @@
           </RuleSettings>
         </Rule>
       </Rules>
+      <AnalyzerSettings>
+        <BooleanProperty Name="IncludeFields">False</BooleanProperty>
+      </AnalyzerSettings>
+    </Analyzer>
+    <Analyzer AnalyzerId="StyleCop.CSharp.OrderingRules">
+      <Rules>
+        <Rule Name="UsingDirectivesMustBePlacedWithinNamespace">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ElementsMustAppearInTheCorrectOrder">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ElementsMustBeOrderedByAccess">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ConstantsMustAppearBeforeFields">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="StaticElementsMustAppearBeforeInstanceElements">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="DeclarationKeywordsMustFollowOrder">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ProtectedMustComeBeforeInternal">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="PropertyAccessorsMustFollowOrder">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="EventAccessorsMustFollowOrder">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="StaticReadonlyElementsMustAppearBeforeStaticNonReadonlyElements">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="UsingAliasDirectivesMustBePlacedAfterOtherUsingDirectives">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="UsingDirectivesMustBeOrderedAlphabeticallyByNamespace">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="UsingAliasDirectivesMustBeOrderedAlphabeticallyByAliasName">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings>
+        <BooleanProperty Name="GeneratedCodeElementOrder">False</BooleanProperty>
+      </AnalyzerSettings>
+    </Analyzer>
+    <Analyzer AnalyzerId="StyleCop.CSharp.ReadabilityRules">
+      <Rules>
+        <Rule Name="CommentsMustContainText">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="DoNotPrefixCallsWithBaseUnlessLocalImplementationExists">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="PrefixLocalCallsWithThis">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="PrefixCallsCorrectly">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="OpeningParenthesisMustBeOnDeclarationLine">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ClosingParenthesisMustBeOnLineOfLastParameter">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ClosingParenthesisMustBeOnLineOfOpeningParenthesis">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="CommaMustBeOnSameLineAsPreviousParameter">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ParameterListMustFollowDeclaration">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ParameterMustFollowComma">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="SplitParametersMustStartOnLineAfterDeclaration">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ParametersMustBeOnSameLineOrSeparateLines">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ParameterMustNotSpanMultipleLines">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="QueryClauseMustFollowPreviousClause">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="QueryClausesMustBeOnSeparateLinesOrAllOnOneLine">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="QueryClauseMustBeginOnNewLineWhenPreviousClauseSpansMultipleLines">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="QueryClausesSpanningMultipleLinesMustBeginOnOwnLine">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="DoNotPlaceRegionsWithinElements">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="CodeMustNotContainEmptyStatements">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="CodeMustNotContainMultipleStatementsOnOneLine">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="BlockStatementsMustNotContainEmbeddedComments">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="BlockStatementsMustNotContainEmbeddedRegions">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="UseStringEmptyForEmptyStrings">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="UseBuiltInTypeAlias">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="UseShorthandForNullableTypes">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
       <AnalyzerSettings />
     </Analyzer>
     <Analyzer AnalyzerId="StyleCop.CSharp.LayoutRules">
@@ -450,209 +606,64 @@
       </Rules>
       <AnalyzerSettings />
     </Analyzer>
-    <Analyzer AnalyzerId="StyleCop.CSharp.OrderingRules">
+    <Analyzer AnalyzerId="StyleCop.CSharp.NamingRules">
       <Rules>
-        <Rule Name="UsingDirectivesMustBePlacedWithinNamespace">
+        <Rule Name="ElementMustBeginWithUpperCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="ElementsMustAppearInTheCorrectOrder">
+        <Rule Name="ElementMustBeginWithLowerCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="ElementsMustBeOrderedByAccess">
+        <Rule Name="InterfaceNamesMustBeginWithI">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="ConstantsMustAppearBeforeFields">
+        <Rule Name="ConstFieldNamesMustBeginWithUpperCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="StaticElementsMustAppearBeforeInstanceElements">
+        <Rule Name="NonPrivateReadonlyFieldsMustBeginWithUpperCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="DeclarationKeywordsMustFollowOrder">
+        <Rule Name="FieldNamesMustNotUseHungarianNotation">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="ProtectedMustComeBeforeInternal">
+        <Rule Name="FieldNamesMustBeginWithLowerCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="PropertyAccessorsMustFollowOrder">
+        <Rule Name="AccessibleFieldsMustBeginWithUpperCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="EventAccessorsMustFollowOrder">
+        <Rule Name="VariableNamesMustNotBePrefixed">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="StaticReadonlyElementsMustAppearBeforeStaticNonReadonlyElements">
+        <Rule Name="FieldNamesMustNotBeginWithUnderscore">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements">
+        <Rule Name="FieldNamesMustNotContainUnderscore">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="UsingAliasDirectivesMustBePlacedAfterOtherUsingDirectives">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="UsingDirectivesMustBeOrderedAlphabeticallyByNamespace">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="UsingAliasDirectivesMustBeOrderedAlphabeticallyByAliasName">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-      </Rules>
-      <AnalyzerSettings />
-    </Analyzer>
-    <Analyzer AnalyzerId="StyleCop.CSharp.ReadabilityRules">
-      <Rules>
-        <Rule Name="CommentsMustContainText">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="DoNotPrefixCallsWithBaseUnlessLocalImplementationExists">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="PrefixLocalCallsWithThis">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="PrefixCallsCorrectly">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="OpeningParenthesisMustBeOnDeclarationLine">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ClosingParenthesisMustBeOnLineOfLastParameter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ClosingParenthesisMustBeOnLineOfOpeningParenthesis">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="CommaMustBeOnSameLineAsPreviousParameter">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ParameterListMustFollowDeclaration">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ParameterMustFollowComma">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="SplitParametersMustStartOnLineAfterDeclaration">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ParametersMustBeOnSameLineOrSeparateLines">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="ParameterMustNotSpanMultipleLines">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="QueryClauseMustFollowPreviousClause">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="QueryClausesMustBeOnSeparateLinesOrAllOnOneLine">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="QueryClauseMustBeginOnNewLineWhenPreviousClauseSpansMultipleLines">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="QueryClausesSpanningMultipleLinesMustBeginOnOwnLine">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="DoNotPlaceRegionsWithinElements">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="CodeMustNotContainEmptyStatements">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="CodeMustNotContainMultipleStatementsOnOneLine">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="BlockStatementsMustNotContainEmbeddedComments">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="BlockStatementsMustNotContainEmbeddedRegions">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="UseStringEmptyForEmptyStrings">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="UseBuiltInTypeAlias">
-          <RuleSettings>
-            <BooleanProperty Name="Enabled">False</BooleanProperty>
-          </RuleSettings>
-        </Rule>
-        <Rule Name="UseShorthandForNullableTypes">
+        <Rule Name="StaticReadonlyFieldsMustBeginWithUpperCaseLetter">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>

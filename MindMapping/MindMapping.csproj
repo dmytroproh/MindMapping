@@ -64,10 +64,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Prototype\BranchPrototype.cs" />
-    <Compile Include="Prototype\ClientPrototype.cs" />
-    <Compile Include="Prototype\LeafPrototype.cs" />
-    <Compile Include="Prototype\PrototypeMap.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -9,9 +9,8 @@ namespace Model
     // Сортировка вставками.
     class DepthFirstSearch : StrategyA
     {
-        public override void Search(Dictionary<int,Component> array, int goal)
-        {
-            
+        public override void Search(Dictionary<int, Component> array, int goal)
+        {        
         }
     }
 }

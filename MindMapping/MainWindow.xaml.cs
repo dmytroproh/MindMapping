@@ -31,9 +31,9 @@ namespace MindMapping
             InitializeComponent();
 
         }
-        static Point First;
-        static Point Second;
-        static String temp;
+        public static Point first;
+        public static Point second;
+        public static String temp;
         static bool hasCihld = false;
         private void EmptyTextHandler(object sender, MouseEventArgs e)
         {
@@ -49,50 +49,53 @@ namespace MindMapping
         
         
         
-        private void AddBrunch(double X, double Y)
+        private void AddBrunch(double x, double y)
         {         
-           TextBox BrunchItem = new TextBox(); 
+            TextBox BrunchItem = new TextBox(); 
             BrunchItem.Text = "Branch";
-            BrunchItem.Margin = new Thickness(X-190, Y-80, 0, 0);
+            BrunchItem.Margin = new Thickness(x - 190, y - 80, 0, 0);
             BrunchItem.Style = this.FindResource("BrunchMind") as Style;             
             IAddChild container = null;
-            BrunchItem.MouseLeftButtonUp+=GetPositionHandler;
+            BrunchItem.MouseLeftButtonUp += GetPositionHandler;
             BrunchItem.MouseRightButtonUp += DrawLineHandler;                       
             container = MyGrid;
             container.AddChild(BrunchItem);             
-            BrunchItem.TextChanged +=CreateBrunchHandler;
+            BrunchItem.TextChanged += CreateBrunchHandler;
        }
 
 private void CreateBrunchHandler(object sender, TextChangedEventArgs e)
 {
- 	       ClientC client = new ClientC();
+ 	        ClientC client = new ClientC();
             TextBox tb = sender as TextBox;
             client.CreateBranch(tb.Text);
             if (temp == null)
+            {
                 temp = tb.Text;
+            }
             else
+            {
                 client.CreateChild(temp, tb.Text);
+            }
 }
 
         private void DrawLineHandler(object sender, MouseButtonEventArgs e)
         {
-            Second.X = (double)e.GetPosition(null).X;
-            Second.Y = (double)e.GetPosition(null).Y;
-            DrawLinef(First, Second);
+            second.X = (double)e.GetPosition(null).X;
+            second.Y = (double)e.GetPosition(null).Y;
+            DrawLinef(first, second);
             
         }
 
         private void GetPositionHandler(object sender, MouseEventArgs e)
         {
-            First.X = (double)e.GetPosition(null).X;
-            First.Y = (double)e.GetPosition(null).Y;
+            first.X = (double)e.GetPosition(null).X;
+            first.Y = (double)e.GetPosition(null).Y;
         }
         private void DrawLinef(Point a, Point b)
         {
-
             Line myLine = new Line();
             myLine.Stroke = System.Windows.Media.Brushes.Black;
-            if (a.X >190&& b.X > 190)
+            if (a.X > 190 && b.X > 190)
             {
                 myLine.X1 = a.X - 190;
                 myLine.X2 = b.X - 190;
@@ -115,7 +118,7 @@ private void CreateBrunchHandler(object sender, TextChangedEventArgs e)
         {
             TextBox LeafItem = new TextBox();
             LeafItem.Text = "Leaf";
-            LeafItem.Margin  = new Thickness(X-190, Y-80, 0, 0);
+            LeafItem.Margin  = new Thickness(X - 190, Y - 80, 0, 0);
             LeafItem.Style = this.FindResource("LeafMind") as Style;
             LeafItem.MouseLeftButtonUp += GetPositionHandler;
             LeafItem.MouseRightButtonUp += DrawLineHandler;
@@ -130,7 +133,7 @@ private void CreateBrunchHandler(object sender, TextChangedEventArgs e)
             ClientC client = new ClientC();
             TextBox tb = sender as TextBox;
             client.CreateLeaf(tb.Text);
-            client.CreateChild(temp,tb.Text);
+            client.CreateChild(temp, tb.Text);
         }
 
             
@@ -167,7 +170,7 @@ private void CreateBrunchHandler(object sender, TextChangedEventArgs e)
         {
             ClientC client = new ClientC();
             TextBox tb = sender as TextBox;
-            client.CreateBranch("Root "+tb.Text);
+            client.CreateBranch("Root " + tb.Text);
             temp = tb.Text;
         }
 
@@ -177,18 +180,15 @@ private void CreateBrunchHandler(object sender, TextChangedEventArgs e)
 
         private void RootFirstHandler(object sender, MouseButtonEventArgs e)
         {
-            First.X = (double)e.GetPosition(null).X;
-            First.Y = (double)e.GetPosition(null).Y;
+            first.X = (double)e.GetPosition(null).X;
+            first.Y = (double)e.GetPosition(null).Y;
             
         }
         private void RootSecondHandler(object sender, MouseButtonEventArgs e)
         {
-            Second.X = (double)e.GetPosition(null).X;
-            Second.Y = (double)e.GetPosition(null).Y;
-            DrawLinef(First, Second);
+            second.X = (double)e.GetPosition(null).X;
+            second.Y = (double)e.GetPosition(null).Y;
+            DrawLinef(first, second);
         }
-
-       
-
     }
 }

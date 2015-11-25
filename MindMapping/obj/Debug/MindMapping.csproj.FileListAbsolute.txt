@@ -15,3 +15,22 @@ c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\MindMapping\ob
 c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\MindMapping\bin\Debug\Model.dll
 c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\MindMapping\bin\Debug\Model.pdb
 c:\users\dmytro\documents\visual studio 2013\Projects\MindMapping\MindMapping\obj\Debug\MindMapping_MarkupCompile.lref
+C:\MindMapping\MindMapping\bin\Debug\MindMapping.exe.config
+C:\MindMapping\MindMapping\bin\Debug\MindMapping.exe
+C:\MindMapping\MindMapping\bin\Debug\MindMapping.pdb
+C:\MindMapping\MindMapping\bin\Debug\Model.dll
+C:\MindMapping\MindMapping\bin\Debug\StyleCop.CSharp.dll
+C:\MindMapping\MindMapping\bin\Debug\StyleCop.dll
+C:\MindMapping\MindMapping\bin\Debug\Model.pdb
+C:\MindMapping\MindMapping\obj\Debug\MindMapping.csprojResolveAssemblyReference.cache
+C:\MindMapping\MindMapping\obj\Debug\App.baml
+C:\MindMapping\MindMapping\obj\Debug\MainWindow.g.cs
+C:\MindMapping\MindMapping\obj\Debug\App.g.cs
+C:\MindMapping\MindMapping\obj\Debug\MindMapping_MarkupCompile.cache
+C:\MindMapping\MindMapping\obj\Debug\MindMapping_MarkupCompile.lref
+C:\MindMapping\MindMapping\obj\Debug\MainWindow.baml
+C:\MindMapping\MindMapping\obj\Debug\MindMapping.g.resources
+C:\MindMapping\MindMapping\obj\Debug\MindMapping.Properties.Resources.resources
+C:\MindMapping\MindMapping\obj\Debug\MindMapping.csproj.GenerateResource.Cache
+C:\MindMapping\MindMapping\obj\Debug\MindMapping.exe
+C:\MindMapping\MindMapping\obj\Debug\MindMapping.pdb

@@ -18,9 +18,6 @@ namespace Model
         public abstract void RecursiveBuild(int[] rules);
         public abstract void Add(int key, Component component);
  
-
-
-
         public abstract void Add(Component component);
         public abstract void Remove(Component component);
         public abstract Component GetChild(int index);

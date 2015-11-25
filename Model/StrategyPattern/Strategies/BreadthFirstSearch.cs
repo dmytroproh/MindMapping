@@ -8,15 +8,8 @@ namespace Model
 {
     class BreadthFirstSearch : StrategyA
     {
-
-
         public override void Search(Dictionary<int, Component> array, int goal)
-        {
-  
-
-        
+        {    
         }
-
-
     }
 }

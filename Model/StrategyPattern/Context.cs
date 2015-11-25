@@ -22,9 +22,6 @@ namespace Model
            public void Search()
             {
              //  strategy.Search(DictTree, goal);
-           }
-
-        
-        }
-    
+           }        
+        }   
 }

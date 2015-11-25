@@ -10,8 +10,8 @@ namespace Model
    public class ClientC
     {
        
-       ArrayList Result = CompositeC.values;
-       Dictionary<String,Component> Tree = new Dictionary<String,Component>();
+       ArrayList result = CompositeC.Values;
+       Dictionary<String, Component> tree = new Dictionary<String, Component>();
         public static void RecursiveInit()
         {
             
@@ -20,40 +20,31 @@ namespace Model
             array = new int[16] {1, 2, 3, 4,
                                    5, 6, 7, 8, 9,
                                    10, 11, 12, 13,
-                                   14, 15, 16} ;
+                                   14, 15, 16};
 
             Component tree = new CompositeC("root");
-
             tree.RecursiveBuild(array);
-            CompositeC tree2 = tree as CompositeC;
-            
-
-
+            CompositeC tree2 = tree as CompositeC;        
             tree.Operation();       
             
         }
         public  void CreateBranch(String text) 
         {
             Component branch1 = new CompositeC(text);
-            Tree.Add(text, branch1);
-
-             
+            tree.Add(text, branch1);           
         }
        
-        public  void CreateLeaf(String text)
-        {
-            
-         Component Leaf = new CompositeC(text);
-            Tree.Add(text, Leaf);
-         
+        public  void CreateLeaf(string text)
+        {           
+            Component leaf = new CompositeC(text);
+            tree.Add(text, leaf);
+       
         }
-        public  void CreateChild(String textBranch,String textLeaf)
+        public  void CreateChild(string textBranch, string textLeaf)
        {
-
-            CompositeC composite = (CompositeC)Tree[textBranch];
-            Leaf leaf = (Leaf)Tree[textLeaf];
+            CompositeC composite = (CompositeC)tree[textBranch];
+            Leaf leaf = (Leaf)tree[textLeaf];
             composite.Add(leaf);
-
         }
     }
 }

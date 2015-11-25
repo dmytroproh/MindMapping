@@ -9,15 +9,12 @@ namespace Model
 {
     class CompositeC : Component
     {
-        public Dictionary<int, Component> nodes = new Dictionary<int, Component>();
-        ArrayList des = new ArrayList();
-
-    
-         public static ArrayList values = new ArrayList();
+        public Dictionary<int, Component> Nodes = new Dictionary<int, Component>();
+        ArrayList des = new ArrayList(); 
+        public static ArrayList Values = new ArrayList();
         public CompositeC(string name)
             : base(name)
-        {
-            
+        {         
         }
 
         int position = -1;
@@ -30,34 +27,30 @@ namespace Model
             {
                 int result = rules[++position] % 4;
 
-                if (!nodes.ContainsKey(result))
-                    nodes.Add(result, new CompositeC("branch " + result.ToString()));
+                if (!Nodes.ContainsKey(result))
+                    Nodes.Add(result, new CompositeC("branch " + result.ToString()));
 
-                  nodes[result].Add(position, new Leaf(rules[position].ToString() + " Лол"));
+                  Nodes[result].Add(position, new Leaf(rules[position].ToString() + " Лол"));
 
                 RecursiveBuild(rules);
             }   
-
         }
 
      
         public override void Operation()
-        {
-           
-          
-            foreach (var component in nodes)
+        {      
+            foreach (var component in Nodes)
             { 
                 component.Value.Operation();
-                values.Add(component.Key);
+                Values.Add(component.Key);
             }
-
         }
 
         public override void Add(int key, Component component)
         
         {
            
-            nodes.Add(key, component);
+            Nodes.Add(key, component);
         }
         public override void Add(Component component)
         {
@@ -71,7 +64,7 @@ namespace Model
 
         public override Component GetChild(int index)
         {
-            return nodes[index] as Component;
+            return Nodes[index] as Component;
         }
     }
 }
